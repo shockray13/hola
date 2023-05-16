@@ -15,8 +15,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 63px;
-    background: #171717;
+    height: 100px;
+    background: #fff;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -27,18 +27,28 @@ body {
     margin-right: 10px;
 }
 
+.logo{
+    margin-left: 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 20px;
+}
 
 .navbar a {
     display: block;
-    padding: 20px;
-    color: #fff;
+    padding: 37px;
+    color: #303030;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 23px;
 }
 
 .navbar a:hover {
-    background: #002387;
+    background: #B9F2FF;
 }
 
 .header {
@@ -53,7 +63,7 @@ body {
 
 .title {
     margin-bottom: 40px;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
@@ -61,15 +71,19 @@ body {
 
 p {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 30px;
     color: #fff;
-    padding: 0 150px;
+    padding: 0 10px;
+    border: 3px  black;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .btn{
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 40px;
+    font-size: 30px;
+    padding: 30px 70px;
     border: 2px solid #002387;
     color: #fff;
     text-decoration: none;
@@ -92,45 +106,49 @@ p {
         padding: 50 px 0;
         background: #303030;
 }
-.box-container{
+.box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-
-}
-.box-container .box{
-    height: 170px;
-    width: 270px;
-    background: #171717;
+  }
+  
+  .box {
+    height: 250px;
+    width: 350px;
+    background: #e8f2ff; /* Color de fondo azul claro */
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-    margin: 20px;
-
-}
-
-.box-container .box i {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50;
-    color: #fff;
-    background: #002387;
-    font-size: 25px;
-    margin: 10px 0;
-}
-.box-container .box h3{
-    font-size: 20px;
+    margin: 25px;
+    padding: 25px;
+  }
+  
+  .box img {
+    max-width: 30%;
+    max-height: 30%;
+    width: auto; /* Cambiar el tamaño de la imagen horizontalmente */
+    height: auto; /* Cambiar el tamaño de la imagen verticalmente */
+    top: 5px;
+  }
+  
+  .box h3 {
+    font-size: 24px; /* Aumentar tamaño de fuente */
+    color: #002387; /* Color de texto azul oscuro */
+    margin-bottom: 10px; /* Aumentar espacio entre título y texto */
+  }
+  
+  .box p {
+    font-size: 18px;
     color: #002387;
+    opacity: 0; /* Establecer la opacidad inicialmente en 0 */
+    transition: opacity 0.3s ease; /* Agregar una transición suave */
 }
 
-.box-container .box p{
-    padding: 0 15px;
-    font-size: 16px;
+.box:hover p {
+    opacity: 1; /* Cambiar la opacidad a 1 al poner el cursor sobre el elemento */
 }
-
+  
 .price{
     background: url(img/print.gif) no-repeat center;
     background-size: cover;

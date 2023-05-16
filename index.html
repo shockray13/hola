@@ -13,7 +13,8 @@
 <div class="head">
 
     <div class="LOGO"> 
-        <a href="#">LOGO</a>
+        <img src="img/pic-3.jpeg" height="105px" width="300px" alt="">
+        
     </div>
 
     <nav class="navbar"> 
@@ -26,16 +27,61 @@
 
     </nav>
 
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .barra-busqueda {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 10;
+          width: 0%;
+          height: 80px;
+          left: 300px;
+          background-color: #f1f1f1;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+    
+        .barra-busqueda input[type="text"] {
+          flex: 1;
+          border: 1px solid #ccc;
+          outline: none;
+          font-size: 30px;
+          padding: 10px;
+        }
+    
+        .barra-busqueda button {
+          border: 1px solid #ccc;
+          background-color: transparent;
+          padding: 0px;
+          cursor: pointer;
+        }
+        
+      
+      </style>
+    </head>
+    <body>
+        
+      <div class="barra-busqueda">
+        <input type="text" placeholder="Buscar..." />
+        <button><img src="img/12.jpg" alt="Buscar" width="50" height="50"></button>
+      </div>
+
 </div>
+
+    </style>
+  </head>
 
 <header class="content header">
     <h2 class="title">Inicio</h2>
     <p>
-        Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Est repellat dolorem 
-        illum ipsam placeat saepe tempore aperiam repellendus
-        ab veritatis, voluptas voluptatum dolores nisi! Labore
-        quisquam ducimus quas dolor reprehenderit!
+        LegacyPrint es una empresa especializada al diseño en ingeniería de producto.
+        Damos vida a cualquier producto, realizamos análisis para su funcionamiento y
+        válida así como animaciones, planos y manufactura de prototipos.
     </p>
     <a href="#" class="btn">Saber mas</a>
 
@@ -44,37 +90,43 @@
 <section class="content sau">
     <h2 class="title">Productos</h2>
     <p>
-        Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Est repellat dolorem 
-        illum ipsam placeat saepe tempore aperiam repellendus
-        ab veritatis, voluptas voluptatum dolores nisi! Labore
-        quisquam ducimus quas dolor reprehenderit!
+        Nos especializamos en el diseño y desarrollo de modelos tridimensionales, la creación de planos
+        técnicos, la fabricación aditiva de prototipos y la ingeniería inversa. Nuestros servicios 
+        combinan la última tecnología con la experiencia de nuestro talentoso equipo para ofrecer 
+        soluciones personalizadas y de alta calidad para sus necesidades de diseño.
         </p>
 
         <div class="box-container">
 
             <div class="box">
-                <i class="fab fa-angular"></i> 
-                <h3>Hola</h3>
-                <p>wfkmerkemgokmfoe</p>  
-
+                <img src="img/model.png" alt="">
+                <h3>Modelado en 3D</h3>
+                <p>Utilizamos software avanzado y técnicas especializadas
+                para convertir sus ideas en modelos digitales en tres dimensiones</p>  
             </div>
-
+        
             <div class="box">
-                <i class="fab fa-android"></i>
-                <h3>Hola</h3>
-                <p>wfkmerkemgokmfoe</p>  
-
+                <img src="img/planos.png" alt="">
+                <h3>Creación de planos técnicos</h3>
+                <p>Nuestros expertos en diseño y dibujo técnico pueden convertir 
+                sus modelos 3D en planos detallados y precisos</p>  
             </div>
-
+        
             <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>Hola</h3>
-                <p>wfkmerkemgokmfoe</p>  
-
+                <img src="img/aditiva.webp" alt="">
+                <h3>Prototipos mediante manufactura aditiva</h3>
+                <p>Utilizando tecnologías de fabricación aditiva, podemos producir 
+                prototipos físicos de alta calidad a partir de sus modelos digitales</p>  
+            </div> 
+        
+            <div class="box">
+                <img src="img/inversa.png" alt=""> 
+                <h3>Ingeniería inversa:</h3>
+                <p>Si necesita recrear o modificar un objeto existente sin tener 
+                    acceso a los planos o los archivos originales</p>  
             </div>
-
-        </div>
+        
+        </div>      
 
 </section>
 
@@ -83,10 +135,12 @@
     <article class="contain">
 
         <h2 class="title">Precio</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Itaque iure molestias deserunt sapiente perferendis assumenda
-             ab impedit vel voluptatem repellat voluptas harum autem, 
-            numquam quo temporibus quos eligendi rerum mollitia!
+        <p>nuestros precios se basan en la complejidad del proyecto, 
+        el tiempo estimado de trabajo y los materiales utilizados. 
+        Para obtener una cotización personalizada, le invitamos a ponerse 
+        en contacto con nosotros a través de nuestro formulario en línea o por correo 
+        electrónico. Estaremos encantados de discutir sus requerimientos y 
+        proporcionarle una estimación precisa.
         </p>
         <a href="#" class="btn">cotizaciones</a>
 
@@ -96,10 +150,10 @@
 
 <section class="content about">
     <h2 class="title">Nosotros</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Itaque iure molestias deserunt sapiente perferendis assumenda
-         ab impedit vel voluptatem repellat voluptas harum autem, 
-        numquam quo temporibus quos eligendi rerum mollitia!
+    <p>"Somos una empresa líder en el campo del modelado de diseños en 3D, creación de planos,
+         prototipos mediante manufactura aditiva e ingeniería inversa. En nuestro equipo, 
+         contamos con expertos altamente cualificados y apasionados por la innovación y la 
+         excelencia en el diseño.
     </p>
     <div class="box-container2">
 
@@ -158,28 +212,49 @@
     <div class="footer-section">
 
         <div>
-            <p>+52 (222) 1242248</p>
+            <p><i class="fas fa-phone"></i> +52 (222) 1242248</p>
+            <p><i class="far fa-envelope"></i> legacyprintcontact@gmail.com</p>
+            <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/lega.cyprint?igshid=NTc4MTIwNjQ2YQ==" style="color: white;">Instagram</a></p>
+            <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100090717501459&mibextid=ZbWKwL"style="color: white;">Facebook</a></p>
         </div>
+        
 
-        <div class="f-enlaces">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-            <a href="#">Consumibles </a>
-            <a href="#">cotizaciones</a>
-
-     
-        </div>
-
+      
         <figure>
-            <img src="img/lugar.jpg" height="220px" width="50%" alt="">
+            <a href="https://www.google.com.mx/maps/place/Inventoteca/@19.0433661,-98.2010197,16.15z/data=!4m14!1m7!3m6!1s0x85cfc0dd6d85eb43:0x57079cf20a414ce8!2sInventoteca!8m2!3d19.0436756!4d-98.2008867!16s%2Fg%2F12hkrl6ht!3m5!1s0x85cfc0dd6d85eb43:0x57079cf20a414ce8!8m2!3d19.0436756!4d-98.2008867!16s%2Fg%2F12hkrl6ht">
+                <img src="img/mapa 4.png" height="320px" width="50%" alt="">
+                <p>Av 5 Pte 134-Interior 10, Col. Centro, Centro Histórico, 72000 Puebla, Pue.</p>
+              </a>
+              
         </figure>
 
+        <style>
+            .logo {
+                position: fixed;
+                bottom: 20px;
+                right: 90px;
+                bottom: 60px;
+                cursor: pointer;
+            }
+            
+            #whatsapp-logo {
+                margin-bottom: 130px;
+                right: 35px;
+            }
+            
+            
+        </style>
         
+        <a href="https://web.whatsapp.com/" target="_blank" class="logo" id="whatsapp-logo">
+            <img src="img/whatsapp-logo.png" alt="WhatsApp Logo" width="220px">
+        </a>
+        
+        <a href="https://www.messenger.com/" target="_blank" class="logo">
+            <img src="img/messenger-logo.png" alt="Messenger Logo" width="110px">
+        </a>
         
     </div>
-
+  
 </section>
 
 </body>
